@@ -11,87 +11,73 @@
 <body>
 
     <header>
-        <h1>My Portfolio</h1>
         <nav>
+            <h2>My Portfolio</h2>
             <ul>
                 <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <button id="darkModeBtn">Dark Mode</button>
-    </header>
 
-    <section id="hero">
-        <h2>Hello, I'm Your Name</h2>
-        <p>Web Developer | Student | Designer</p>
-    </section>
+        <div class="hero">
+            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1200" alt="Banner">
+            <div class="hero-text">
+                <h1>Hello, I'm John Doe</h1>
+                <p>Web Developer & Designer</p>
+            </div>
+        </div>
+    </header>
 
     <section id="about">
         <h2>About Me</h2>
         <p>
-            I am passionate about web development and creating modern websites.
+            I am a passionate web developer who enjoys creating modern,
+            responsive, and user-friendly websites.
         </p>
     </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-
-        <div class="skill">
-            <p>HTML</p>
-            <div class="bar">
-                <div class="progress html"></div>
-            </div>
-        </div>
-
-        <div class="skill">
-            <p>CSS</p>
-            <div class="bar">
-                <div class="progress css"></div>
-            </div>
-        </div>
-
-        <div class="skill">
-            <p>JavaScript</p>
-            <div class="bar">
-                <div class="progress js"></div>
-            </div>
-        </div>
-    </section>
-
     <section id="projects">
-        <h2>Projects</h2>
+        <h2>My Projects</h2>
 
-        <div class="project">
-            <h3>Portfolio Website</h3>
-            <p>Personal portfolio built with HTML, CSS, and JavaScript.</p>
-        </div>
+        <div class="cards">
 
-        <div class="project">
-            <h3>Student Management</h3>
-            <p>Java application for managing students.</p>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500" alt="Project 1">
+                <h3>Portfolio Website</h3>
+                <p>Responsive portfolio website using HTML and CSS.</p>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=500" alt="Project 2">
+                <h3>Business Landing Page</h3>
+                <p>Modern landing page with responsive design.</p>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=500" alt="Project 3">
+                <h3>Blog Website</h3>
+                <p>Clean blog layout with mobile-friendly interface.</p>
+            </div>
+
         </div>
     </section>
 
     <section id="contact">
         <h2>Contact Me</h2>
 
-        <form id="contactForm">
-            <input type="text" id="name" placeholder="Your Name">
-            <input type="email" id="email" placeholder="Your Email">
-            <textarea id="message" placeholder="Message"></textarea>
-            <button type="submit">Send</button>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Message"></textarea>
+            <button type="submit">Send Message</button>
         </form>
-
-        <p id="result"></p>
     </section>
 
     <footer>
         <p>© 2026 My Portfolio</p>
     </footer>
 
-    <script src="script.js"></script>
 </body>
 
 </html>
